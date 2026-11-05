@@ -1,0 +1,55 @@
+{
+  "captured_at": "2026-11-05T13:52:02.986480+00:00",
+  "application": {
+    "format_version": 1,
+    "id": "app.imalkav.counter",
+    "name": "Counter",
+    "version": "0.1.0",
+    "api_version": "27.14.0",
+    "author": "iMalkav",
+    "description": "A persistent counter with configurable step and limits.",
+    "heap_size_kib": 256,
+    "debug": false
+  },
+  "firmware": {
+    "version": "r1051",
+    "target": 21,
+    "branch": "dev",
+    "build_date": "2026-10-30",
+    "commit_hash": "6ee64ba1",
+    "intercom_version": "6ee64ba1",
+    "nwp_version": "1611.2.1.1.255.11.71",
+    "matter_version": "1.0"
+  },
+  "api_version": "27.15.0",
+  "method": "GET /api/screen?display=0 and display=1; base64 decoded and saved as PNG without resizing or retouching",
+  "settings": {
+    "version": 1,
+    "values": {
+      "title": "Counter",
+      "step": 1,
+      "minimum": 0,
+      "maximum": 999999
+    }
+  },
+  "inputs": [],
+  "data_note": "Schema default settings.",
+  "fixture": null,
+  "frames": [
+    {
+      "path": "screenshots/front.png",
+      "width": 72,
+      "height": 16,
+      "frame_sha256": "a70d8fe57a32aae2ebd1e45e55e6497315865351cf14fa400b305ced6eea3e49",
+      "png_sha256": "b3007845b3d28267c6058cd0f202eff5fc825c2a4011b721ca9681f21ff7fdd1"
+    },
+    {
+      "path": "screenshots/back.png",
+      "width": 160,
+      "height": 80,
+      "frame_sha256": "2a09ee3d08d463eb0126b83b160d07ff910ebfa45dbb9ae157e5f20486567665",
+      "png_sha256": "385b7cd8affcbc9288df4220ad89c5dc8ef142de5a610201c6f52f4a4911f69b"
+    }
+  ],
+  "verification": "Installed, launched, captured both displays, then quit via the device API. This is not comprehensive physical-device testing or verification on the latest release firmware."
+}
